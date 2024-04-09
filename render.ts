@@ -1,4 +1,4 @@
-import { User } from "./users.js";
+import { Track } from "./tracks.js";
 
 const head = (title: string) => `
 <head>
@@ -34,26 +34,26 @@ const head = (title: string) => `
   </style>
 </head>`;
 
-const renderUsers = (users: Array<User>) => {
+const renderTracks = (tracks: Array<Track>) => {
   let html = "";
-  for (const user of users) {
+  for (const track of tracks) {
     html += `<div class="user">
-      <img src="${user.picture.medium}" />
+      <img src="${track.picture.medium}" />
       <div class="data">
-        <div class="name">${user.fullName}</div>
-        <div class="email">${user.email}</div>
+        <div class="name">${track.fullName}</div>
+        <div class="email">${track.email}</div>
       </div>
     </div>`;
   }
   return html;
 }
 
-export const render = (users: Array<User>) => {
+export const render = (tracks: Array<Track>) => {
   return `
 <html>
-  ${head("User List")}
+  ${head("Tracks List")}
   <body>
-    ${renderUsers(users)}
+    ${renderTracks(tracks)}
   </body>
 </html>`;
 };

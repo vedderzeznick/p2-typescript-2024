@@ -1,6 +1,6 @@
-export class Track {
+export class Album {
   constructor(
-    public gender: "male" | "female",
+    public title: string,
     public name: {
       title: "Mr" | "Mrs";
       first: string;
@@ -32,12 +32,12 @@ export class Track {
 const apiKey = "vVwSXklewGBCzvTPjbAY";
 const apiSecret = "eoempEAEUWILMEbjXIWYblMKCESomVJU";
 
-export const loadTracksByCountry = async () => {
+export const loadAlbums = async () => {
   const response = await fetch(
     `https://api.discogs.com/database/search?genre=rock&type=release&key=${apiKey}&secret=${apiSecret}&page=1&per_page=50`
   );
   const { pagination, results } = (await response.json());
-  const objectTracks: Array<Track> = [];
+  const objectTracks: Array<Album> = [];
   for (const { title, year, style, country, format, label, cover_image } of results) {
     console.log(title, cover_image);
   }

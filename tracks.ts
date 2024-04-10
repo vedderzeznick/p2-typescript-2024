@@ -1,4 +1,3 @@
-
 export class Track {
   constructor(
     public gender: "male" | "female",
@@ -30,14 +29,17 @@ export class Track {
     return `${this.name.first} ${this.name.last}`;
   }
 }
-const apikeyLastfm = '5277065d92545fb29b8bb4fe64aa0f88';
+const apiKey = "vVwSXklewGBCzvTPjbAY";
+const apiSecret = "eoempEAEUWILMEbjXIWYblMKCESomVJU";
 
-export const loadTracksByCountry = async (country: string) => {
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country=${country}&api_key=${apikeyLastfm}&format=json`);
-  const { tracks } = (await response.json()) as { tracks: any[] };
+export const loadTracksByCountry = async () => {
+  const response = await fetch(
+    `https://api.discogs.com/database/search?genre=rock&type=release&key=${apiKey}&secret=${apiSecret}&page=1&per_page=50`
+  );
+  const { pagination, results } = (await response.json());
   const objectTracks: Array<Track> = [];
-  for (const { gender, name, location, login, email, picture } of tracks) {
-    objectTracks.push(new Track(gender, name, location, login, email, picture));
+  for (const { title, year, style, country, format, label, cover_image } of results) {
+    console.log(title, cover_image);
   }
-  return objectTracks;
+  return [];
 };

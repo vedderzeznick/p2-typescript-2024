@@ -1,7 +1,10 @@
 import { writeFile } from "fs/promises";
-import { render } from "./render.js";
+import { render, detailedInfo } from "./render.js";
 import { loadAlbums } from "./albums.js";
 const albums = await loadAlbums();
 const html = render(albums);
-await writeFile('tracks.html', html);
-
+await writeFile('index.html', html);
+for (const album of albums) {
+    const detailedHtml = detailedInfo(album);
+    await writeFile(`${album.id}.html`, detailedHtml);
+}

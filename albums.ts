@@ -1,33 +1,16 @@
 export class Album {
   constructor(
     public title: string,
-    public name: {
-      title: "Mr" | "Mrs";
-      first: string;
-      last: string;
-    },
-    public location: {
-      street: string;
-      city: string;
-      state: string;
-      country: string;
-      postcode: number;
-    },
-    public login: {
-      username: string;
-      password: string;
-    },
-    public email: string,
-    public picture: {
-      large: string;
-      medium: string;
-      thumbnail: string;
-    }
+    public year: string,
+    public format: string[],
+    public style: string[],
+    public cover_image: string,
+    public country: string,
+    public artist: string,
+    public name: string,
+    public label: string[],
+    public id: number
   ) {}
-
-  get fullName() {
-    return `${this.name.first} ${this.name.last}`;
-  }
 }
 const apiKey = "vVwSXklewGBCzvTPjbAY";
 const apiSecret = "eoempEAEUWILMEbjXIWYblMKCESomVJU";
@@ -37,9 +20,11 @@ export const loadAlbums = async () => {
     `https://api.discogs.com/database/search?genre=rock&type=release&key=${apiKey}&secret=${apiSecret}&page=1&per_page=50`
   );
   const { pagination, results } = (await response.json());
-  const objectTracks: Array<Album> = [];
-  for (const { title, year, style, country, format, label, cover_image } of results) {
-    console.log(title, cover_image);
+  const albums: Array<Album> = [];
+  for (const { title, year, style, country, format, label, cover_image, id } of results) {
+    const splitted = title.split(" - ");
+    const album = new Album(title, year, format, style, cover_image, country, splitted[0], splitted[1], label, id);
+    albums.push(album);
   }
-  return [];
+  return albums;
 };

@@ -1,0 +1,151 @@
+{
+    "pagination": {
+        "page": 1,
+        "pages": 5000,
+        "per_page": 2,
+        "items": 5665557,
+        "urls": {
+            "last": "https://api.discogs.com/database/search?genre=rock&type=release&key=vVwSXklewGBCzvTPjbAY&secret=eoempEAEUWILMEbjXIWYblMKCESomVJU&page=5000&per_page=2",
+            "next": "https://api.discogs.com/database/search?genre=rock&type=release&key=vVwSXklewGBCzvTPjbAY&secret=eoempEAEUWILMEbjXIWYblMKCESomVJU&page=2&per_page=2"
+        }
+    },
+    "results": [
+        {
+            "country": "Canada",
+            "year": "2000",
+            "format": [
+                "Vinyl",
+                "LP",
+                "Album"
+            ],
+            "label": [
+                "Constellation",
+                "Chemical Sound",
+                "Hotel2Tango",
+                "Record Technology Incorporated",
+                "Golden Mastering"
+            ],
+            "type": "release",
+            "genre": [
+                "Rock"
+            ],
+            "style": [
+                "Post Rock",
+                "Experimental"
+            ],
+            "id": 74260,
+            "barcode": [
+                "6 66561 00121 6",
+                "666561001216",
+                "CST-012-A JG 4145.1(3)",
+                "CST-012-B JG 4145.2(3) GOLDEN",
+                "CST-012-C JG 4145.3(3) GOLDEN",
+                "CST-012-D JG 4145.4(3) GOLDEN",
+                "CST-012-A JG 4145.1(3)",
+                "CST-012-B JG GOLDEN",
+                "CST-012-C JG 4145.3(3) GOLDEN",
+                "CST-012-D JG 4145.4(3) GOLDEN",
+                "CST-012-A GOLDEN JG 4145.1(3)",
+                "CST-012-B GOLDEN JG",
+                "CST-012-C GOLDEN JG 4145.3(3) ",
+                "CST-012-D GOLDEN JG 4145.3(3) ",
+                "CST-012-A GOLDEN JG 4145.1(3)",
+                "CST-012-B GOLDEN JG",
+                "CST-012-C GOLDEN JG 4145.3(3) ",
+                "CST-012-D GOLDEN JG 4145.4(3)"
+            ],
+            "master_id": 4393,
+            "master_url": "https://api.discogs.com/masters/4393",
+            "uri": "/release/74260-Godspeed-You-Black-Emperor-Lift-Your-Skinny-Fists-Like-Antennas-To-Heaven",
+            "catno": "cst012",
+            "title": "Godspeed You Black Emperor! - Lift Your Skinny Fists Like Antennas To Heaven",
+            "thumb": "https://i.discogs.com/InopuzEjuklPUJXblHhZPsHLv0I2D4Vik80WAq9qIX4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MjYw/LTE2MDI0MTM5NTIt/OTc1Ni5qcGVn.jpeg",
+            "cover_image": "https://i.discogs.com/ytQGzdHvEGjnWr3PEX36iaDeBpwRg0QhXT830ml9HHs/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0MjYw/LTE2MDI0MTM5NTIt/OTc1Ni5qcGVn.jpeg",
+            "resource_url": "https://api.discogs.com/releases/74260",
+            "community": {
+                "want": 7711,
+                "have": 19434
+            },
+            "format_quantity": 2,
+            "formats": [
+                {
+                    "name": "Vinyl",
+                    "qty": "2",
+                    "descriptions": [
+                        "LP",
+                        "Album"
+                    ]
+                }
+            ]
+        },
+        {
+            "country": "Europe",
+            "year": "2010",
+            "format": [
+                "Vinyl",
+                "LP",
+                "Album",
+                "Reissue",
+                "Repress"
+            ],
+            "label": [
+                "Columbia",
+                "Music On Vinyl",
+                "Sony Music Entertainment",
+                "Sony Music Entertainment",
+                "Music On Vinyl B.V.",
+                "Music On Vinyl B.V.",
+                "Brooklyn Academy Of Music",
+                "Sony/CBS, Haarlem",
+                "Record Industry",
+                "Precision Lacquer"
+            ],
+            "type": "release",
+            "genre": [
+                "Rock"
+            ],
+            "style": [
+                "Alternative Rock",
+                "Acoustic",
+                "Grunge"
+            ],
+            "id": 2445087,
+            "barcode": [
+                "8 713748 980344",
+                "8713748980344",
+                "01 484300 20 1A1   A   87082 1-A MOVLP 138",
+                "01 484300 20 1B1    87082 1B  MOVLP 138   A",
+                "01 484300 20 1C1   A   87082 1C  MOVLP 138",
+                "01 484300 20 1D1   A   87082 1D  MOVLP 138",
+                "BIEM/STEMRA",
+                "LC 00162"
+            ],
+            "master_id": 21706,
+            "master_url": "https://api.discogs.com/masters/21706",
+            "uri": "/release/2445087-Alice-In-Chains-MTV-Unplugged",
+            "catno": "MOVLP138",
+            "title": "Alice In Chains - MTV Unplugged",
+            "thumb": "https://i.discogs.com/0i92bvZ_Q1TpWfKHjBy9wo4UmKlOnm5Vf-Eqxof3F9E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDUw/ODctMTQzMTY5NzU2/Mi0xODE3LmpwZWc.jpeg",
+            "cover_image": "https://i.discogs.com/QsaImxmzxaHuzHPaBGBbWEhpAOEHfWlW0iS8K6EHUq4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDUw/ODctMTQzMTY5NzU2/Mi0xODE3LmpwZWc.jpeg",
+            "resource_url": "https://api.discogs.com/releases/2445087",
+            "community": {
+                "want": 5083,
+                "have": 13135
+            },
+            "format_quantity": 2,
+            "formats": [
+                {
+                    "name": "Vinyl",
+                    "qty": "2",
+                    "text": "180 gram",
+                    "descriptions": [
+                        "LP",
+                        "Album",
+                        "Reissue",
+                        "Repress"
+                    ]
+                }
+            ]
+        }
+    ]
+}

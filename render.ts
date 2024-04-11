@@ -103,19 +103,42 @@ export const detailedInfo = (album: Album) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Album Information</title>
     <style>
+      @keyframes fadeInOut {
+        0%, 100% {
+          opacity: 0; /* Fully transparent */
+        }
+        50% {
+          opacity: 0.8; /* Semi-transparent black */
+        }
+      }
       body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background-image: url('music-background.jpg');
         background-size: cover;
         background-position: center;
         color: white;
+        background-color: black;
+        overflow: hidden;
+      }
+      .main-back {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: url('${album.cover_image}');
+        animation: fadeInOut 5s ease-in-out infinite;
+        width: 100vw;
+        height: 100vh;
+        z-index: 50;
       }
       .album-info {
-        margin-top: 20px;
+        padding-top: 20px;
+        z-index: 100;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100vw;
+        height: 100vh;
       }
       .album-info h2 {
-        margin-bottom: 10px;
+        padding-bottom: 10px;
       }
       .album-info img {
         width: 300px;
@@ -124,19 +147,20 @@ export const detailedInfo = (album: Album) => {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       }
       .album-info p {
-        margin-top: 10px;
+        padding-top: 10px;
       }
     </style>
   </head>
   <body>
+    <div class="main-back"></div>
     <div class="album-info">
-      <h2>Album Title</h2>
-      <img src="album-cover.jpg" alt="Album Cover">
-      <p>Artist: Artist Name</p>
-      <p>Release Year: 2024</p>
-      <p>Genre: Genre Name</p>
-      <p>Tracks: Number of Tracks</p>
-      <p>Description: Album Description</p>
+      <h2>${album.name}</h2>
+      <img src="${album.cover_image}" alt="Album Cover">
+      <p>Artist: ${album.artist}</p>
+      <p>Release Year: ${album.year}</p>
+      <p>Genre: ${album.style.join(", ")}</p>
+      <p>Formats: ${album.format.join(", ")}</p>
+      <p>Labels: ${album.label.join(", ")}</p>
     </div>
   </body>
   </html>`

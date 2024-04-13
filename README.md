@@ -20,3 +20,7 @@ Para hacer esta práctica hay que:
 - Al finalizar, se debe descargar un ZIP y entregar en el Campus Online de UPC School (habrá una tarea para ello).
 
 **Muy importante**: la solución debe sustituir el código original (no debe quedar rastro, ni nombres, ni nada de nada). Si bien el ejemplo puede contener partes reaprovechables, se recomienda empezar _desde cero_ (ya que eso produce un aprendizaje de mucha más profundidad).
+
+
+===> PARA EJECUTAR  <===
+correr el archivo main.ts y luego de generar los archivos necesarios abrir live server en index.html

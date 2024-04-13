@@ -61,7 +61,7 @@ const head = (title: string) => `
   </style>
   <script>
     function navigateToDifferentPage(mid) {
-        window.location.href = mid + ".html";
+        window.location.href = "./albums/" + mid + ".html";
     }
   </script>
 </head>`;
